@@ -7,3 +7,9 @@
 [submodule "lib/ArduinoJSON"]
 	path = lib/ArduinoJSON
 	url = https://github.com/bblanchon/ArduinoJson.git
+[submodule "lib/thinx-firmware-esp32"]
+	path = lib/thinx-firmware-esp32
+	url = git@github.com:suculent/thinx-firmware-esp32.git
+[submodule "lib/esp32-http-update"]
+	path = lib/esp32-http-update
+	url = git@github.com:suculent/esp32-http-update.git

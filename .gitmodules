@@ -1,6 +1,0 @@
-[submodule "lib/ArduinoJSON"]
-	path = lib/ArduinoJSON
-	url = https://github.com/bblanchon/ArduinoJson.git
-[submodule "lib/WiFiManager"]
-  path = lib/WiFiManager
-	url = https://github.com/bbx10/WiFiManager.git

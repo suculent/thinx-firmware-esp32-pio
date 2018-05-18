@@ -1,0 +1,34 @@
+#include <THiNX32Lib.h>
+
+#define __DEBUG__
+const char *apikey = "8e8af4640fee5d8c0649c7b08bcecc3cd379cc777325ccaacc73a11372d5ed6a";
+const char *owner_id = "cedc16bb6bb06daaa3ff6d30666d91aacd6e3efbf9abbc151b4dcade59af7c12";
+const char *ssid = "THiNX-IoT+";
+const char *pass = "<enter-your-ssid-password>";
+
+THiNX thx;
+void setup();
+void loop();
+void finalizeCallback () {
+  Serial.println("*INO: Finalize callback called.");
+  ESP.deepSleep(3e9);
+}
+
+void setup() {
+
+  Serial.begin(115200);
+
+#ifdef __DEBUG__
+  while (!Serial);
+  WiFi.begin(ssid, pass);
+#endif
+
+  thx = THiNX(apikey, owner_id);
+  thx.setFinalizeCallback(finalizeCallback);
+}
+
+
+void loop()
+{
+  thx.loop();
+}

@@ -1,0 +1,15 @@
+[submodule "lib/PubSubSclient"]
+	path = lib/PubSubSclient
+	url = https://github.com/Imroy/pubsubclient.git
+[submodule "lib/thinx-firmware-esp32"]
+	path = lib/thinx-firmware-esp32
+	url = https://github.com/suculent/thinx-firmware-esp32.git
+[submodule "lib/ArduinoJson"]
+	path = lib/ArduinoJson
+	url = https://github.com/bblanchon/ArduinoJson.git
+[submodule "lib/esp32-http-update"]
+	path = lib/esp32-http-update
+	url = https://github.com/suculent/esp32-http-update.git
+[submodule "lib/WiFiManager.git"]
+	path = lib/WiFiManager.git
+	url = https://github.com/bbx10/WiFiManager.git

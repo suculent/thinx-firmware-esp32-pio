@@ -10,6 +10,7 @@
 [submodule "lib/esp32-http-update"]
 	path = lib/esp32-http-update
 	url = https://github.com/suculent/esp32-http-update.git
-[submodule "lib/WiFiManager.git"]
-	path = lib/WiFiManager.git
+[submodule "lib/WiFiManager"]
+	path = lib/WiFiManager
 	url = https://github.com/bbx10/WiFiManager.git
+	branch = esp32

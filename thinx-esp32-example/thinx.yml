@@ -1,0 +1,8 @@
+arduino:
+  platform: espressif
+  arch: esp32
+  board: esp32
+  f_cpu: 240
+  flash_size: 4M
+  libs:
+    - ArduinoJSON

@@ -26,13 +26,14 @@ void finalizeCallback () {
 
 void setup() {
 
-  Serial.begin(115200);
+  Serial.begin(230400);
 
 #ifdef __DEBUG__
   while (!Serial); // wait for debug console connection
   WiFi.begin(ssid, pass);
 #endif
 
+  THiNX::forceHTTP = true;
   thx = THiNX(apikey, owner_id);
 
   // Enter API Key and Owner ID (should be faster)

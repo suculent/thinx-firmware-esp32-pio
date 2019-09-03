@@ -1,4 +1,4 @@
-arduino:
+platformio:
   platform: espressif
   arch: esp32
   board: esp32

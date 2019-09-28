@@ -1,14 +1,21 @@
+#include <Arduino.h>
+
+#include <Arduino.h>
 #include <THiNX32Lib.h>
 
-#define __DEBUG__
-const char *apikey = "8e8af4640fee5d8c0649c7b08bcecc3cd379cc777325ccaacc73a11372d5ed6a";
+#define ARDUINO_IDE 
+#define __DEBUG__ 
+
+const char *apikey = "388496180dab9d1bd7060ffdba4fd37aa4b369710a851d29dc66e575c57f5e1e";
 const char *owner_id = "cedc16bb6bb06daaa3ff6d30666d91aacd6e3efbf9abbc151b4dcade59af7c12";
-const char *ssid = "THiNX-IoT+";
-const char *pass = "<enter-your-ssid-password>";
+const char *ssid = "Havana1";
+const char *pass = "1234567890";
 
 THiNX thx;
+void finalizeCallback ();
 void setup();
 void loop();
+
 void finalizeCallback () {
   Serial.println("*INO: Finalize callback called.");
   ESP.deepSleep(3e9);
@@ -16,14 +23,18 @@ void finalizeCallback () {
 
 void setup() {
 
-  Serial.begin(115200);
+  Serial.begin(230400);
 
 #ifdef __DEBUG__
   while (!Serial);
   WiFi.begin(ssid, pass);
 #endif
 
+  THiNX::forceHTTP = true;
   thx = THiNX(apikey, owner_id);
+
+
+
   thx.setFinalizeCallback(finalizeCallback);
 }
 

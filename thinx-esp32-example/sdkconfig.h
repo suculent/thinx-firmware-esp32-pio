@@ -4,6 +4,7 @@
  * Espressif IoT Development Framework Configuration
  *
  */
+#define CONFIG_TCP_OVERSIZE_DISABLE
 #define CONFIG_GATTC_ENABLE 1
 #define CONFIG_ESP32_PHY_MAX_TX_POWER 20
 #define CONFIG_PHY_ENABLED 1
@@ -123,3 +124,13 @@
 #define CONFIG_MONITOR_BAUD_OTHER_VAL 115200
 #define CONFIG_ESPTOOLPY_PORT "/dev/ttyUSB0"
 #define CONFIG_OPTIMIZATION_LEVEL_RELEASE 1
+
+// https://community.platformio.org/t/platformio-esp32-tcp-compile-errors/6605
+#define CONFIG_TCPIP_LWIP 1
+
+// https://github.com/platformio/platform-espressif32/issues/63
+#define CONFIG_MBEDTLS_AES_C 1
+#define CONFIG_BLUEDROID_PINNED_TO_CORE 0
+#define CONFIG_TCP_OVERSIZE_MSS 1
+#define CONFIG_TIMER_TASK_STACK_SIZE 3584
+#define CONFIG_WL_SECTOR_SIZE 4096

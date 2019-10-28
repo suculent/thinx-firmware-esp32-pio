@@ -20,7 +20,7 @@ Provides example implementations for ESP32 with PlatformIO.
 
 ### Arduino IDE
 
-Search for `THiNXLib` in Arduino Library Manager and install all other dependencies... or you can just copy then from the `lib` folder if you prefer tested versions before the latest.
+Search for `THiNX` in Arduino Library Manager and install all other dependencies... or you can just copy then from the `lib` folder if you prefer tested versions before the latest.
 
 ### PlatformIO Library Manager
 

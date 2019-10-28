@@ -1,6 +1,4 @@
-# 1 "/var/folders/z4/xdx0_q792h50_8tv3c4qxjv40000gn/T/tmpmw6cnc22"
 #include <Arduino.h>
-# 1 "/Users/sychram/Repositories/thinx-firmware-esp32-pio/thinx-esp32-example/thinx-esp32-example.ino"
 #include <Arduino.h>
 #include <THiNX32Lib.h>
 

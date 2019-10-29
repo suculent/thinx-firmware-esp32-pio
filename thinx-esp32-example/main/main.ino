@@ -33,8 +33,6 @@ void setup() {
   THiNX::forceHTTP = true;
   thx = THiNX(apikey, owner_id);
 
-
-
   thx.setFinalizeCallback(finalizeCallback);
 }
 

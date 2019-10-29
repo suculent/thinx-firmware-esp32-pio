@@ -1,0 +1,7 @@
+{
+    "name": "PubSubClient(imroy)",
+    "version": "1.99.2",
+    "build": {
+      "flags": "-Wno-error=reorder"
+    }
+}

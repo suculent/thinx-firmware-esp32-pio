@@ -27,7 +27,6 @@ void setup() {
   WiFi.begin(ssid, pass);
 #endif
 
-  THiNX::forceHTTP = true;
   thx = THiNX(apikey, owner_id);
 
   thx.setFinalizeCallback(finalizeCallback);

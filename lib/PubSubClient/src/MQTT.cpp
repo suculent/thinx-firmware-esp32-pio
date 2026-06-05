@@ -599,6 +599,7 @@ namespace MQTT {
     case 2:
       return PUBREC;
     }
+    return None;
   }
 
 
